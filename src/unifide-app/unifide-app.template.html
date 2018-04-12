@@ -1,5 +1,5 @@
 <style>
-
+  
   :host{
     display: block;
     margin: 0;
@@ -9,7 +9,7 @@
     background-attachment: fixed;
     height:100vh;
     width:100%;
-    background: #24292F;
+
   }
 
   app-header {
@@ -60,11 +60,24 @@
 
   }
   .unifide-grid-item{
-    width: 50%;
+
     display: block;
     float: left;
     padding:8px;
     box-sizing: border-box;
+  }
+  .dashboard .unifide-grid-item{
+    width: 50%;
+  }
+  .applications .unifide-grid-item{
+    width: 20%;
+  }
+  .applications .unifide-grid-item img{
+    width: 100%;
+    height: auto;
+  }
+  .applications .application-link{
+    padding: 8px;
   }
   .unifide-grid-item paper-card{
     width:100%;
@@ -97,7 +110,7 @@
     <app-header fixed effects="waterfall" slot="header">
       <app-toolbar>
         <iron-icon id="toggle" icon="menu"></iron-icon>
-        <div main-title>Inbox</div>
+        <div main-title>Unifide</div>
       </app-toolbar>
     </app-header>
     <app-drawer-layout id="drawerLayout">
@@ -121,7 +134,7 @@
             attr-for-selected="data-page"
             fallback-selection="404"
             role="main">
-        <div data-page="dashboard">
+        <div data-page="dashboard" class="dashboard">
           <div class="unifide-grid">
               <div class="unifide-grid-item">
                 <paper-card heading="Notes" class="dash-notes">
@@ -131,8 +144,6 @@
                   <paper-item><paper-checkbox >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</paper-checkbox></paper-item>
                   <paper-item><paper-checkbox checked>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</paper-checkbox></paper-item>
                   <paper-item><paper-checkbox >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</paper-checkbox></paper-item>
-
-
                 </paper-card>
               </div>
               <div class="unifide-grid-item">
@@ -153,7 +164,110 @@
               </div>
           </div>
         </div>
-        <div data-page="apps">applications</div>
+        <div data-page="apps" class="applications">
+          <div class="unifide-grid">
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/150px-Google_%22G%22_Logo.svg.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://image.flaticon.com/icons/svg/25/25231.svg">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://seeklogo.com/images/A/atom-logo-19BD90FF87-seeklogo.com.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="http://startup.fiu.edu/wp-content/uploads/2018/02/discord-logo-3176a652a0327604-512x512.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://wac-cdn.atlassian.com/dam/jcr:89e146b4-642e-41fc-8e65-7848337d7bdd/atlassian_charlie_square.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://seeklogo.com/images/B/binance-coin-bnb-logo-97F9D55608-seeklogo.com.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://pbs.twimg.com/profile_images/875775464744263680/OcvrhZc7_400x400.jpg">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Google_Inbox_by_Gmail_logo.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c540.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://hackadaycom.files.wordpress.com/2013/03/octoprint.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="http://soulcoal.com/school/ableton1.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://pbs.twimg.com/profile_images/720253203833487360/E4jA7xy5_400x400.jpg">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://image.freepik.com/free-icon/adobe-photoshop_318-1513.jpg">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://png.icons8.com/material/1600/adobe-illustrator.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://cdn-images-1.medium.com/max/251/0*sCLGDlsgOHhDkZfL.jpg">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Open_Broadcaster_Software_Logo.png/220px-Open_Broadcaster_Software_Logo.png">
+                </paper-card>
+              </div>
+              <div class="unifide-grid-item">
+                <paper-card class="application-link">
+                  <img src="http://www.fundza.co.za/wp-content/uploads/2017/03/unnamed.png">
+                </paper-card>
+              </div>
+          </div>
+        </div>
         <div data-page="computers">computers</div>
         <div data-page="social">social</div>
         <div data-page="audio">audio</div>
